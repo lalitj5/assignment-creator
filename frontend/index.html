@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Assignment Creator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Assignment Creator</h1>
+    <p class="subtitle">Upload three course documents to generate an assignment.</p>
+
+    <form id="assignment-form">
+      <div class="field">
+        <label for="curriculum">Curriculum <span class="required">*</span></label>
+        <input type="file" id="curriculum" name="curriculum" accept=".pdf" required />
+      </div>
+
+      <div class="field">
+        <label for="lesson_plan">Lesson Plan <span class="required">*</span></label>
+        <input type="file" id="lesson_plan" name="lesson_plan" accept=".pdf" required />
+      </div>
+
+      <div class="field">
+        <label for="lecture_notes">Lecture Notes <span class="required">*</span></label>
+        <input type="file" id="lecture_notes" name="lecture_notes" accept=".pdf" required />
+      </div>
+
+      <div class="field">
+        <label for="user_prompt">Additional Instructions <span class="optional">(optional)</span></label>
+        <textarea
+          id="user_prompt"
+          name="user_prompt"
+          rows="3"
+          placeholder="Optional: any extra instructions…"
+        ></textarea>
+      </div>
+
+      <button type="submit" id="submit-btn">Generate Assignment</button>
+    </form>
+
+    <div id="spinner" class="hidden" aria-live="polite">Generating assignment, please wait…</div>
+    <div id="error-msg" class="hidden" role="alert"></div>
+
+    <section id="result" class="hidden">
+      <h2>Preview</h2>
+      <iframe id="pdf-preview" title="Assignment PDF preview"></iframe>
+      <a id="download-link" download="assignment.pdf">Download assignment.pdf</a>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
