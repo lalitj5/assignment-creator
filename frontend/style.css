@@ -148,3 +148,173 @@ button[type="submit"]:disabled {
 .hidden {
   display: none;
 }
+
+/* ── Answer key panel ───────────────────────────────────────── */
+#answer-key-panel {
+  margin-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.25rem;
+}
+
+#answer-key-panel h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.answer-key-list {
+  margin: 0;
+  padding-left: 1.4rem;
+}
+
+.answer-key-list li {
+  margin-bottom: 0.9rem;
+}
+
+.answer-key-list .ak-question {
+  font-weight: 600;
+  margin-bottom: 0.2rem;
+}
+
+.answer-key-list .ak-answer {
+  color: #1f2328;
+  margin: 0;
+}
+
+/* ── Shared status messages ─────────────────────────────────── */
+.spinner {
+  margin-top: 1.25rem;
+  color: #57606a;
+  font-style: italic;
+}
+
+.error-msg {
+  margin-top: 1.25rem;
+  color: #c0392b;
+  background: #fdf2f2;
+  border: 1px solid #f5c6cb;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+}
+
+.success-msg {
+  margin-top: 0.75rem;
+  color: #1a7f37;
+  background: #f0fdf4;
+  border: 1px solid #bbf7d0;
+  border-radius: 6px;
+  padding: 0.65rem 0.9rem;
+}
+
+.muted {
+  color: #57606a;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Section separators ─────────────────────────────────────── */
+#history-section,
+#grade-section {
+  margin-top: 2.5rem;
+  border-top: 1px solid #e5e7eb;
+  padding-top: 1.5rem;
+}
+
+/* ── History table ──────────────────────────────────────────── */
+#history-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.75rem;
+  font-size: 0.93rem;
+}
+
+#history-table th,
+#history-table td {
+  text-align: left;
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+#history-table th {
+  font-weight: 600;
+  color: #57606a;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+/* ── Grade table ────────────────────────────────────────────── */
+.grade-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 1rem;
+  font-size: 0.88rem;
+  table-layout: fixed;
+}
+
+.grade-table th,
+.grade-table td {
+  text-align: left;
+  padding: 0.45rem 0.55rem;
+  border: 1px solid #e5e7eb;
+  vertical-align: top;
+  word-wrap: break-word;
+}
+
+.grade-table th {
+  background: #f7f8fa;
+  font-weight: 600;
+  color: #57606a;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.grade-table col:nth-child(1) { width: 3%; }
+.grade-table col:nth-child(2) { width: 22%; }
+.grade-table col:nth-child(3) { width: 25%; }
+.grade-table col:nth-child(4) { width: 25%; }
+.grade-table col:nth-child(5) { width: 25%; }
+
+/* ── Text inputs (in addition to file/textarea) ─────────────── */
+input[type="text"] {
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: 0.45rem 0.65rem;
+  font-size: 0.95rem;
+  font-family: inherit;
+  background: #f7f8fa;
+  color: #1f2328;
+}
+
+input[type="text"]:focus {
+  outline: 2px solid #3b82d4;
+  outline-offset: 1px;
+}
+
+/* ── Secondary / outline button ─────────────────────────────── */
+button.outline,
+#save-btn,
+#grade-btn,
+#save-grade-btn {
+  display: inline-block;
+  padding: 0.45rem 1.1rem;
+  border: 1px solid #3b82d4;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #3b82d4;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 0.5rem;
+}
+
+button.outline:disabled,
+#save-btn:disabled,
+#grade-btn:disabled,
+#save-grade-btn:disabled {
+  border-color: #a0b4cc;
+  color: #a0b4cc;
+  cursor: not-allowed;
+}

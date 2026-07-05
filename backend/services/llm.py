@@ -25,7 +25,7 @@ Output exactly one JSON code block with this shape:
 ```
 
 Rules:
-- `key_ideas`: exactly 3 entries — short concept names only, NO descriptions.
+- `key_ideas`: exactly 3 entries — short concept names only, NO descriptions. If more than 3, keep the first 3 entries.
 - `questions`: minimum 8 open-ended questions (why/how/explain/discuss/analyse).
   No multiple-choice, no fill-in-the-blank, no yes/no questions.
 - Do not include any text outside the JSON code block."""
